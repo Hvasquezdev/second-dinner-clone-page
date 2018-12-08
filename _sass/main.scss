@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+.paddingLess-bottom {
+  padding-bottom: 0 !important;
+}
+
+.marginBottom1 {
+  margin-bottom: 10px;
+}
+
+.marginBottom2 {
+  margin-bottom: 20px;
+}
+
+.marginBottom3 {
+  margin-bottom: 30px;
+}
+
+.marginBottom4 {
+  margin-bottom: 40px !important;
+}
+
+.buttonJob {
+  transition-property: box-shadow, transform;
+  transition-duration: .3s;
+
+  &:hover {
+    box-shadow: 0 0 .8em rgba(254, 221, 86, .2);
+    transform: scale(1.02) translateY(-4px);
+  }
+
+  &:active {
+    box-shadow: 0 0 .8em rgba(254, 221, 86, .2);
+    transform: scale(0.98) translateY(-2px);
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+
+  li {
+    height: 2rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    width: 2rem;
+
+    a {
+      align-items: center;
+      display: flex;
+      font-size: 2em;
+      height: 2rem;
+      justify-content: center;
+      opacity: .5;
+      transition-property: opacity, transform;
+      user-select: none;
+      width: 2rem;
+      will-change: opacity, transform;
+
+      &:hover {
+        opacity: 1;
+        transform: scale(1.25);
+      }
+
+      &active {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@import "./animation.scss";
+
+@import "../node_modules/bulma/bulma";
